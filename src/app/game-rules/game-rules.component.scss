@@ -1,0 +1,60 @@
+mat-card {
+    min-height: 70px;
+    background-color: #000000a1;
+    color: white;
+    padding: 36px;
+}
+
+.mat-card-content {
+    max-width: 60vw;
+}
+
+mat-expansion-panel {
+    background-color: #000000a1;
+    color: white;
+
+    p {
+        margin-top: 8px;
+    }
+}
+
+mat-expansion-panel-header {
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+
+    .mat-expansion-indicator::after{
+        color: white;
+    }
+}
+
+mat-panel-title {
+    color: white;
+    font-size: 18px;
+}
+
+mat-expansion-panel:not(.mat-expanded):not([aria-disabled=true]) .mat-expansion-panel-header:hover {
+    background-color: rgba(0, 0, 0, 0) !important;
+}
+
+
+@media(max-width: 930px) {
+    .mat-card-content {
+        max-width: 80vw;
+    }
+}
+
+@media(max-width: 650px) {
+    .mat-card-content {
+        max-width: 60vw;
+    }
+}
+
+@media(max-width: 550px) {
+    .mat-card-title {
+        font-size: 20px;
+    }
+
+    mat-card {
+        padding: 16px;
+    }
+}
