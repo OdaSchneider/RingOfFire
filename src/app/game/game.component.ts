@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { ActivatedRoute, Router } from '@angular/router';
 import { AngularFirestore } from '@angular/fire/compat/firestore';
-import { addDoc, collection, doc } from '@angular/fire/firestore';
 
 
 import { Game } from 'src/models/game';

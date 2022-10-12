@@ -1,4 +1,4 @@
-.player{
+.player {
     width: 180px;
     display: flex;
     align-items: center;
@@ -8,15 +8,15 @@
     filter: brightness(0.75);
     transform: translateX(82vw);
 
-    img{
-       width: 50px;
-       height: 50px;
-       margin: 8px;
-       object-fit: cover;
-       border-radius: 100px; 
+    img {
+        width: 40px;
+        height: 40px;
+        margin: 4px;
+        object-fit: cover;
+        border-radius: 100px;
     }
 
-    span{
+    span {
         font-size: 16px;
         color: white;
         text-transform: uppercase;
@@ -24,125 +24,123 @@
     }
 }
 
-.playerActive{
+.playerActive {
     width: 250px;
     filter: unset;
     opacity: 1;
     transform: translateX(32px) !important;
     transition: all 225ms ease-in-out;
 
-    img{
+    img {
         width: 60px;
         height: 60px;
         margin: 8px;
         object-fit: cover;
-        border-radius: 100px; 
-     }
+        border-radius: 100px;
+    }
 
-    span{
+    span {
         font-size: 24px;
         color: white;
         text-transform: uppercase;
     }
 }
 
-@media(max-width: 1024px){
-    .player{
+@media(max-width: 1024px) {
+    .player {
         transform: translateX(80vw);
     }
 }
 
-@media(max-width: 930px){
-    .player{
+@media(max-width: 930px) {
+    .player {
         width: auto;
         transform: translateX(90vw);
         filter: unset;
-        span{
+
+        span {
             display: none;
         }
     }
 
-    .playerActive{
+    .playerActive {
         width: 250px;
-        span{
+
+        span {
             display: block;
         }
     }
 }
 
-@media(max-width: 700px){
-    .player{
-        img{
+@media(max-width: 700px) {
+    .player {
+        img {
             width: 45px;
             height: 45px;
         }
     }
 }
 
-@media(max-width: 650px){
-    .player{
-        img{
+@media(max-width: 650px) {
+    .player {
+        img {
             width: 42px;
             height: 42px;
         }
     }
 }
 
-@media(max-width: 600px){
-    .player{
+@media(max-width: 600px) {
+    .player {
         transform: translateX(88vw);
-        img{
+
+        img {
             width: 40px;
             height: 40px;
         }
     }
 
-    .playerActive{
+    .playerActive {
         width: 220px;
-        img{
+
+        img {
             width: 40px;
             height: 40px;
         }
-        span{
+
+        span {
             font-size: 20px;
         }
     }
 }
 
-@media(max-width: 520px){
-    .player{
+@media(max-width: 520px) {
+    .player {
         transform: translateX(85vw);
     }
 }
 
-@media(max-width: 450px){
-    .player{
-        img{
+@media(max-width: 450px) {
+    .player {
+        img {
             width: 35px;
             height: 35px;
         }
     }
 
-    .playerActive{
-        transform: translate(32px,-24px)!important;
+    .playerActive {
+        transform: translate(32px, -24px) !important;
     }
 }
 
-@media(max-width: 350px){
-    .player{
+@media(max-width: 350px) {
+    .player {
         transform: translate(78vw, 40px);
     }
 
-    .playerActive{
-        span{
+    .playerActive {
+        span {
             font-size: 16px;
         }
-    }
-}
-
-
-@media(max-height: 500px){
-    .playerActive{
-        transform: translate(32px, -32px)!important;
     }
 }

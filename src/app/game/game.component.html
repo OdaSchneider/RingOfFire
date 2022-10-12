@@ -1,6 +1,6 @@
 <app-player *ngFor="let player of game.players; let i = index;" 
     (click)="openDialogEditPlayer(i)"
-    [ngStyle]="{'top.px': i == game.currentPlayer ? 50 : 50 + (i*70)}"  
+    [ngStyle]="{'top.px': i == game.currentPlayer ? 20 : 20 + (i*55)}"  
     [name]="player.name" [profile]="player.profile" 
     [playerActive]="i == game.currentPlayer" 
     class="displayPlayer"></app-player>
